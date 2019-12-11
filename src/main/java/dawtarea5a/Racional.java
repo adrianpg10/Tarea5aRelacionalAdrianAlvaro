@@ -87,4 +87,9 @@ public class Racional {
             this.denominador = this.denominador * x.denominador;
         }
     }
+
+    public void producto(Racional x) {
+        this.numerador = this.numerador * x.numerador;
+        this.denominador = this.denominador * x.denominador;
+    }
 }
