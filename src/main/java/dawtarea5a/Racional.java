@@ -101,7 +101,11 @@ public class Racional {
         return new Racional(multiplicacion, multiplicacionb);
 
     }
-    
-    
-    
+
+    public static boolean igualdad(Racional x, Racional y) {
+
+        return x.getNumerador() == y.getDenominador() && x.getDenominador() == y.getNumerador();
+
+    }
+
 }
