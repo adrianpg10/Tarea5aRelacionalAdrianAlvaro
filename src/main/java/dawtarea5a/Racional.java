@@ -92,4 +92,16 @@ public class Racional {
         this.numerador = this.numerador * x.numerador;
         this.denominador = this.denominador * x.denominador;
     }
+
+    public static Racional division(Racional x, Racional y) {
+
+        int multiplicacion = x.numerador * y.denominador;
+        int multiplicacionb = x.denominador * y.numerador;
+
+        return new Racional(multiplicacion, multiplicacionb);
+
+    }
+    
+    
+    
 }
