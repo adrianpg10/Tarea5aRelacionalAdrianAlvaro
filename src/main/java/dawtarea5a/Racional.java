@@ -5,6 +5,8 @@
  */
 package dawtarea5a;
 
+import java.util.Random;
+
 /**
  *
  * @author adrianpg
@@ -106,6 +108,16 @@ public class Racional {
 
         return x.getNumerador() == y.getDenominador() && x.getDenominador() == y.getNumerador();
 
+    }
+
+    public static Racional aleatorio() {
+
+        Random aleatorio = new Random();
+
+        int numerador = aleatorio.nextInt(10);
+        int denominador = aleatorio.nextInt(9) + 1;
+
+        return new Racional(numerador, denominador);
     }
 
 }
