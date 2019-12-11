@@ -55,4 +55,9 @@ public class Racional {
         }
     }
 
+    public void imprimirConsola() {
+
+        System.out.println("Número Racional: " + getNumerador() + "/" + getDenominador());
+    }
+
 }
