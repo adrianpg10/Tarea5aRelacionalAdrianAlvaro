@@ -13,15 +13,18 @@ import java.util.Random;
  */
 public class Racional {
 
+    //Declaración de atributos
     private int numerador;
     private int denominador;
 
+    //Constructor por defecto
     public Racional() {
 
         this.numerador = 1;
         this.denominador = 1;
     }
 
+    //Constructor parametrizado
     public Racional(int numerador, int denominador) {
         this.numerador = numerador;
 
@@ -35,6 +38,7 @@ public class Racional {
 
     }
 
+    //Métodos getters
     public int getNumerador() {
         return numerador;
     }
@@ -43,6 +47,7 @@ public class Racional {
         return denominador;
     }
 
+    //Métodos setters
     public void setNumerador(int numerador) {
         this.numerador = numerador;
     }
@@ -57,16 +62,19 @@ public class Racional {
         }
     }
 
+    //Método que imprime por consola el número racional
     public void imprimirConsola() {
 
         System.out.println("Número Racional: " + getNumerador() + "/" + getDenominador());
     }
 
+    //Método toString
     @Override
     public String toString() {
         return +numerador + "/" + denominador;
     }
 
+    //Método suma
     public void suma(Racional x) {
 
         if (this.denominador == x.getDenominador()) {
@@ -79,6 +87,7 @@ public class Racional {
 
     }
 
+    //Método resta
     public void resta(Racional x) {
 
         if (this.denominador == x.getDenominador()) {
@@ -90,11 +99,13 @@ public class Racional {
         }
     }
 
+    //Método producto
     public void producto(Racional x) {
         this.numerador = this.numerador * x.numerador;
         this.denominador = this.denominador * x.denominador;
     }
 
+    //Método de clase división
     public static Racional division(Racional x, Racional y) {
 
         int multiplicacion = x.numerador * y.denominador;
@@ -104,12 +115,14 @@ public class Racional {
 
     }
 
+    //Método de clase igualdad
     public static boolean igualdad(Racional x, Racional y) {
 
         return x.getNumerador() == y.getDenominador() && x.getDenominador() == y.getNumerador();
 
     }
 
+    //Método de clase que devuelve un objeto Racional
     public static Racional aleatorio() {
 
         Random aleatorio = new Random();
