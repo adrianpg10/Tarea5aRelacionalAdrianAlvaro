@@ -10,18 +10,27 @@ package dawtarea5a;
  * @author adrianpg
  */
 public class Racional {
+
     private int numerador;
     private int denominador;
 
     public Racional() {
-        
-        this.numerador=1;
-        this.denominador=1;
+
+        this.numerador = 1;
+        this.denominador = 1;
     }
-    
-    
-    
-    
-    
-    
+
+    public Racional(int numerador, int denominador) {
+        this.numerador = numerador;
+
+        if (this.denominador == 0) {
+            System.out.println("El denominador no es válido.");
+            this.denominador = 1;
+
+        } else {
+            this.denominador = denominador;
+        }
+
+    }
+
 }
