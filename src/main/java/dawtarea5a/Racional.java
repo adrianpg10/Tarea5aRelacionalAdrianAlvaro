@@ -65,4 +65,15 @@ public class Racional {
         return +numerador + "/" + denominador;
     }
 
+    public void suma(Racional x) {
+
+        if (this.denominador == x.getDenominador()) {
+            this.numerador = (this.numerador + x.numerador);
+
+        } else {
+            this.numerador = (this.numerador * x.denominador + this.denominador * x.numerador);
+            this.denominador = this.denominador * x.denominador;
+        }
+
+    }
 }
