@@ -33,4 +33,12 @@ public class Racional {
 
     }
 
+    public int getNumerador() {
+        return numerador;
+    }
+
+    public int getDenominador() {
+        return denominador;
+    }
+
 }
