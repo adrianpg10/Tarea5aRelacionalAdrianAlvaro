@@ -10,5 +10,18 @@ package dawtarea5a;
  * @author adrianpg
  */
 public class Racional {
+    private int numerador;
+    private int denominador;
+
+    public Racional() {
+        
+        this.numerador=1;
+        this.denominador=1;
+    }
+    
+    
+    
+    
+    
     
 }
