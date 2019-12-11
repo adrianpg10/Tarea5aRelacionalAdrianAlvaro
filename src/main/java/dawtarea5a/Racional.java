@@ -25,7 +25,7 @@ public class Racional {
     public Racional(int numerador, int denominador) {
         this.numerador = numerador;
 
-        if (this.denominador == 0) {
+        if (denominador == 0) {
             System.out.println("El denominador no es válido.");
             this.denominador = 1;
 
