@@ -60,4 +60,9 @@ public class Racional {
         System.out.println("Número Racional: " + getNumerador() + "/" + getDenominador());
     }
 
+    @Override
+    public String toString() {
+        return +numerador + "/" + denominador;
+    }
+
 }
