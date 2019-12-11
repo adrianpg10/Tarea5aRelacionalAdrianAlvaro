@@ -41,4 +41,18 @@ public class Racional {
         return denominador;
     }
 
+    public void setNumerador(int numerador) {
+        this.numerador = numerador;
+    }
+
+    public void setDenominador(int denominador) {
+        if (this.denominador == 0) {
+            System.out.println("El denominador no es válido.");
+            this.denominador = 1;
+
+        } else {
+            this.denominador = denominador;
+        }
+    }
+
 }
