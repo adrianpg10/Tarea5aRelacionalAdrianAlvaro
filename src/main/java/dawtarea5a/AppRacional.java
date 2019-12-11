@@ -23,5 +23,15 @@ public class AppRacional {
         k.imprimirConsola();
         System.out.println("Número aletorio : " + Racional.aleatorio());
 
+        //Comparamos el racional z y el racional k y lo imprimimos
+        System.out.println("Comparacion: " + Racional.igualdad(z, k));
+
+        z.suma(k);
+        System.out.println("Sumamos z con k: " + z);
+        //Dividimos racional z y k
+        System.out.println("Division: " + Racional.division(z, k));
+        //Multiplicamos racional z y k
+        z.producto(k);
+        System.out.println("Multiplicamos z con k: " + z);
     }
 }
